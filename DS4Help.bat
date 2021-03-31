@@ -42,9 +42,8 @@ net stop NVDisplay.ContainerLocalSystem
 
 @echo [35m[DS4Help][0m Services should be dead, check if controller is in exclusive mode. 
 @echo [35m[DS4Help][0m if exclusive mode worked, press a key to restart nvidia services.
-@echo [35m[DS4Help][0m relaunching nvidia services automatically in 45 seconds.
 
-timeout /T 45
+pause > NUL 
 
 net start NvContainerLocalSystem
 net start NVDisplay.ContainerLocalSystem
