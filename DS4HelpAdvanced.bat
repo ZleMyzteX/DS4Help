@@ -8,6 +8,12 @@ title DS4Help
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 
 echo [35m[DS4Help][0m This script stops all processes that block DS4Windows from using exclusive mode. 
+
+echo [35m[DS4Help][0m Add your directory to "DS4Windows.exe" so it can be launched automatically.
+echo [35m[DS4Help][0m (for example: C:\Program Files (x86)\DS4Windows\DS4Windows.exe)
+
+set /p UserPath= "[35m[DS4Help][0m path to DS4Windows: "
+echo [35m[DS4Help][0m path to DS4Windows is set as: %UserPath%
 echo [35m[DS4Help][0m Press [32many key[0m to start stopping Game processes and Nvidia services.
 
 pause > NUL
@@ -40,8 +46,11 @@ taskkill /f /im gamebar.exe
 net stop NvContainerLocalSystem 
 net stop NVDisplay.ContainerLocalSystem
 
-@echo [35m[DS4Help][0m Services should be dead, check if controller is in exclusive mode. 
+@echo [35m[DS4Help][0m Services should be dead, starting DS4Windows.
+start "" "%UserPath%"
+@echo [35m[DS4Help][0m DS4Windows opened.
 @echo [35m[DS4Help][0m if exclusive mode worked, press a key to restart nvidia services.
+
 
 pause > NUL 
 
