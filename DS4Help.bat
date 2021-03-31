@@ -11,7 +11,8 @@ echo [35m[DS4Help][0m This script stops all processes that block DS4Windows fr
 echo [35m[DS4Help][0m Press [32many key[0m to start stopping Game processes and Nvidia services.
 
 pause > NUL
-
+:: my approach is to simply try to kill every task, without checking if the task is running - could be done better for sure
+:: it works like this though.
 :: origin 
 @echo [35m[DS4Help][0m stopping gamelaunchers [Origin, Steam, Epic, Utrash]
 taskkill /f /im origin.exe
@@ -48,6 +49,5 @@ timeout /T 45
 net start NvContainerLocalSystem
 net start NVDisplay.ContainerLocalSystem
 @echo [35m[DS4Help][0m services should be running again.
-@echo [35m[DS4Help][0m thanks for using ds4help - made by [35m.zle'[0m 
 pause > NUL 
 exit
