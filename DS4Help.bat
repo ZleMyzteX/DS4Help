@@ -48,5 +48,7 @@ pause > NUL
 net start NvContainerLocalSystem
 net start NVDisplay.ContainerLocalSystem
 @echo [35m[DS4Help][0m services should be running again.
+@echo [35m[DS4Help][0m thanks for using DS4Help - made by zle
+@echo [35m[DS4Help][0m press any button to exit.
 pause > NUL 
 exit
