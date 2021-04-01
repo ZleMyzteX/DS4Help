@@ -53,7 +53,6 @@ if "%ERRORLEVEL%"=="0" (
     @echo [35m[DS4Help][0m NVDisplay.ContainerLocalSystem is already stopped. 
 )
 
-
 @echo [35m[DS4Help][0m services should be dead, check if controller is in exclusive mode. 
 @echo [35m[DS4Help][0m if exclusive mode worked, press a key to restart nvidia services.
 
