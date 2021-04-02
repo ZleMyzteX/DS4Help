@@ -43,10 +43,14 @@ goto :choices
 
 :answerYes 
 setx DS4HelpPath "%UserPath%"
+set global_changed=1
 
 echo [35m[DS4Help][0m path to DS4Windows is set as: %DS4HelpPath%
+goto :skipchange
 
 :skipvar
+set global_changed=0
+:skipchange
 echo [35m[DS4Help][0m press [32many key[0m to start stopping the processes.
 
 pause > NUL
@@ -99,7 +103,13 @@ if "%ERRORLEVEL%"=="0" (
 )
 
 @echo [35m[DS4Help][0m Services should be dead, starting DS4Windows.
+
+if "%global_changed%"=="0" (
 start "" "%DS4HelpPath%"
+) else (
+start "" "%UserPath%"
+)
+
 @echo [35m[DS4Help][0m DS4Windows opened.
 @echo [35m[DS4Help][0m if exclusive mode worked, press a key to restart nvidia services.
 
