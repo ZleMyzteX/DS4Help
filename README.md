@@ -43,4 +43,4 @@ If the controller is connected and exclusive mode worked, simply press a button 
 
 After your first run, if everything worked, you can always just use DS4HelpAdvRun - this'll skip the variable checks and simply use the set variable.
 
-*note: DS4HelpAdvanced creates a global variable and changes it if needed. - if you want to delete the variable, simply press WIN + R & run "rundll32.exe sysdm.cpl,EditEnvironmentVariables" and delete the variable DS4HelpPath.*
+*note: DS4HelpAdvanced creates a global variable and changes it if needed. - if you want to delete the variable, simply press WIN + R & run "rundll32.exe sysdm.cpl,EditEnvironmentVariables" and delete the variable "DS4HelpPath".*
