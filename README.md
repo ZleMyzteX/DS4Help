@@ -20,11 +20,11 @@ Before using the script it's very helpful to start up DS4Windows and check the "
 ![image](https://user-images.githubusercontent.com/13170303/113399787-136f2180-93a1-11eb-84ba-ffef558f7ba3.png)
 
 
-# Tutorilla - DS4Help
+# Tutorial - DS4Help
 Simply download the script and open it with admin rights.
 After opening press a button to start the script, it'll end the processes.
 
-# Tutorilla - DS4HelpAdvanced + DS4HelpAdvRun
+# Tutorial - DS4HelpAdvanced + DS4HelpAdvRun
 Running the script will explain every step too, but here's a short overview if there's anything unclear. 
 
 DS4HelpAdvanced and DS4HelpAdvRun automatically start DS4Windows after specifying the path to it. 
