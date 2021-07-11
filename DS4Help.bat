@@ -10,17 +10,12 @@ echo [35m[DS4Help][0m press [32many key[0m to start stopping the processes.
 
 pause > NUL
 :: my approach is to simply try to kill every task, without checking if the task is running - could be done better for sure
-:: origin 
 @echo [35m[DS4Help][0m stopping gamelaunchers [origin, steam, epic, uplay]
 taskkill /f /im origin.exe
 :: steam processes
-taskkill /f /im steam.exe 
-taskkill /f /im steamcmd.exe
-taskkill /f /im steamService.exe
-taskkill /f /im steamwebhelper.exe
+taskkill /f /im steam.exe /im steamcmd.exe /im steamService.exe /im steamwebhelper.exe
 ::uplay
-taskkill /f /im upc.exe 
-taskkill /f /im UplayWebCore.exe
+taskkill /f /im upc.exe /im UplayWebCore
 taskkill /f /im EpicGamesLauncher.exe
 
 @echo [35m[DS4Help][0m stopping edge, windows store, netflix and the xbox gamebar. 
