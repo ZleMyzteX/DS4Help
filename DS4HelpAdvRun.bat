@@ -11,14 +11,14 @@ echo [35m[DS4Help][0m this script stops all processes that block DS4Windows fr
 echo [35m[DS4Help][0m press [32many key[0m to start stopping the processes.
 
 pause > NUL
-:: my approach is to simply try to kill every task, without checking if the task is running - could be done better for sure
-:: it works like this though.
+:: checking for DS4Windows & restarting it if it runs. 
 tasklist /FI "IMAGENAME eq DS4Windows.exe" 2>NUL | find /I /N "DS4Windows.exe">NUL
 if "%ERRORLEVEL%"=="0" (
     @echo [35m[DS4Help][0m DS4Windows is running, stopping it to restart it later. 
 	taskkill /f /im DS4Windows.exe 
 )
 
+:: my approach is to simply try to kill every task, without checking if the task is running - could be done better for sure
 :: origin 
 @echo [35m[DS4Help][0m stopping gamelaunchers [origin, steam, epic, uplay]
 taskkill /f /im origin.exe
