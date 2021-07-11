@@ -1,9 +1,7 @@
 @echo off
 title DS4HelpAdvanced
 
-::admin check from stackoverflow! source: 
-::https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file
-::https://stackoverflow.com/a/40388766/13486323
+::admin check from stackoverflow! source: https://stackoverflow.com/a/40388766/13486323
 
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 
@@ -30,17 +28,16 @@ taskkill /f /im steamwebhelper.exe
 ::uplay
 taskkill /f /im upc.exe 
 taskkill /f /im UplayWebCore.exe
-::epic 
 taskkill /f /im EpicGamesLauncher.exe
 
 @echo [35m[DS4Help][0m stopping edge, windows store, netflix and the xbox gamebar. 
-::misc
+::misc, some programs that are known to cause problems
 taskkill /f /im msedge.exe /t
 taskkill /f /im WinStore.App.exe
 taskkill /f /im WWAHost.exe
 taskkill /f /im gamebar.exe
 
-@echo [35m[DS4Help][0m all processes should be dead / were dead already. 
+@echo [35m[DS4Help][0m all processes should be dead. 
 @echo [35m[DS4Help][0m checking for nvidia services.
 
 sc query NvContainerLocalSystem | find "RUNNING"
