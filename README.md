@@ -3,7 +3,7 @@ Simple script that helps running DS4Windows' exclusive mode. (https://github.com
 
 It stops all processes that are known to block DS4Windows from using exclusive mode. (Game Launcher, Xbox gamebar, etc.)
 
-At the moment its "optimised" for NVIDIA systems. (it'll try to end all the nvidia services, doesn't make sense on a system with an AMD GPU...) More compatibility and features will be added soon. 
+At the moment its "optimised" for NVIDIA systems. (it'll try to end all the nvidia services, doesn't make sense on a system with an AMD GPU...) More compatibility and features will be added soon.
 
 There are three scripts - *DS4Help*, *DS4HelpAdvanced* & *DS4HelpAdvRun*
 
@@ -11,7 +11,7 @@ There are three scripts - *DS4Help*, *DS4HelpAdvanced* & *DS4HelpAdvRun*
 
 * DS4HelpAdvanced allows you to specify the file path of DS4Windows and it'll then start DS4Windows automatically.
 
-* DS4HelpAdvRun does the same thing as DS4HelpAdvanced but without the possibility to change the global path to DS4Windows. 
+* DS4HelpAdvRun does the same thing as DS4HelpAdvanced but without the possibility to change the global path to DS4Windows. Use this if you already specified the path to DS4Windows.
 
 
 # Setup
@@ -38,8 +38,8 @@ It's pretty self explainatory, you simply have to specify your file path to DS4W
 
 ![image](https://user-images.githubusercontent.com/13170303/113399436-85933680-93a0-11eb-9c3a-32d98d948e70.png)
 
-Afterwards all the processes should be stopped and DS4Windows should be open. 
-If the controller is connected and exclusive mode worked, simply press a button to restart the NVIDIA services. 
+Afterwards all the processes should be stopped and DS4Windows should be open.
+If the controller is connected and exclusive mode worked, simply press a button to restart the NVIDIA services.
 
 After your first run, if everything worked, you can always just use DS4HelpAdvRun - this'll skip the variable checks and simply use the set variable.
 
