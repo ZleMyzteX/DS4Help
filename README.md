@@ -11,7 +11,7 @@ There are three scripts - *DS4Help*, *DS4HelpAdvanced* & *DS4HelpAdvRun*
 
 * DS4HelpAdvanced allows you to specify the file path of DS4Windows and it'll then start DS4Windows automatically.
 
-* DS4HelpAdvRun does the same thing as DS4HelpAdvanced but without the possibility to change the global path to DS4Windows. 
+* DS4HelpAdvRun does the same thing as DS4HelpAdvanced but without the possibility to change the global path to DS4Windows. Use this if you already specified the path to DS4Windows.
 
 
 # Setup
