@@ -24,6 +24,8 @@ taskkill /f /im steam.exe /im steamcmd.exe /im steamService.exe /im steamwebhelp
 ::uplay
 taskkill /f /im upc.exe /im UplayWebCore
 taskkill /f /im EpicGamesLauncher.exe
+::battle.net
+taskkill /f /im Battle.net.exe
 
 @echo [35m[DS4Help][0m stopping edge, windows store, netflix and the xbox gamebar. 
 ::misc, some programs that are known to cause problems

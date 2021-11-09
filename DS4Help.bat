@@ -2,7 +2,6 @@
 title DS4Help
 
 ::admin check from stackoverflow! source: https://stackoverflow.com/a/40388766/13486323
-
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 
 echo [35m[DS4Help][0m this script stops all processes that block DS4Windows from using exclusive mode. 
@@ -10,13 +9,15 @@ echo [35m[DS4Help][0m press [32many key[0m to start stopping the processes.
 
 pause > NUL
 :: my approach is to simply try to kill every task, without checking if the task is running - could be done better for sure
-@echo [35m[DS4Help][0m stopping gamelaunchers [origin, steam, epic, uplay]
+@echo [35m[DS4Help][0m stopping gamelaunchers [origin, steam, epic, uplay, battle.net]
 taskkill /f /im origin.exe
 :: steam processes
 taskkill /f /im steam.exe /im steamcmd.exe /im steamService.exe /im steamwebhelper.exe
 ::uplay
 taskkill /f /im upc.exe /im UplayWebCore
 taskkill /f /im EpicGamesLauncher.exe
+::battle.net
+taskkill /f /im Battle.net.exe
 
 @echo [35m[DS4Help][0m stopping edge, windows store, netflix and the xbox gamebar. 
 ::misc, some programs that are known to cause problems
