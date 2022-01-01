@@ -25,6 +25,8 @@ taskkill /f /im msedge.exe /t
 taskkill /f /im WinStore.App.exe
 taskkill /f /im WWAHost.exe
 taskkill /f /im gamebar.exe
+taskkill /f /im XboxAppServices.exe 
+taskkill /f /im XboxPCApp.exe
 :: thanks to jm0neycs
 taskkill /f /im msedgewebview2.exe
 
