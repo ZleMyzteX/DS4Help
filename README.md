@@ -15,31 +15,33 @@ There are three scripts - *DS4Help*, *DS4HelpAdvanced* & *DS4HelpAdvRun*
 
 
 # Setup
-Before using the script it's very helpful to start up DS4Windows and check the "Hide DS4 Controller" box. 
+Before using the script make sure "Hide DS4 Controller" is enabled.
 
-![image](https://user-images.githubusercontent.com/13170303/113399787-136f2180-93a1-11eb-84ba-ffef558f7ba3.png)
+![tempsnip](https://user-images.githubusercontent.com/13170303/147862444-3a5b43d8-4ea1-4700-817c-6ae514e7fb25.png)
 
 
 # Tutorial - DS4Help
-Simply download the script and open it with admin rights.
-After opening press a button to start the script, it'll end the processes.
+Simply download the script and open it with admin rights. (admin rights are needed to kill all the tasks)
+
+After opening press any button to start the script, it'll start ending the processes. Afterwards you can simply close the terminal window.
 
 # Tutorial - DS4HelpAdvanced + DS4HelpAdvRun
 Running the script will explain every step too, but here's a short overview if there's anything unclear. 
 
-DS4HelpAdvanced and DS4HelpAdvRun automatically start DS4Windows after specifying the path to it. 
-If you didn't ever run DS4HelpAdvanced before, it'll ask you to specify the file path to DS4Windows. After you did that a global variable is set, so "DS4HelpAdvRun" can always simply use the specified path and start DS4Windows automatically. If you ever want to change the path, just rerun DS4HelpAdvanced and when it asks "do you want to change it" enter y. 
+**DS4HelpAdvanced** and **DS4HelpAdvRun** automatically start DS4Windows after specifying the path to it. 
+
+If you didn't ever run **DS4HelpAdvanced** before, it'll ask you to specify the file path to DS4Windows. After you did that a global variable is set, so "DS4HelpAdvRun" can always simply use the specified path and start DS4Windows automatically. If you ever want to change the path, just rerun DS4HelpAdvanced and when it asks "do you want to change it" enter **y** and specify the new path.
 
 Your first run will look like this:
 
 ![image](https://user-images.githubusercontent.com/13170303/113399270-3c42e700-93a0-11eb-869f-7d8edd64042e.png)
 
-It's pretty self explainatory, you simply have to specify your file path to DS4Windows.exe. After this just confirm it's the right path. 
+It's pretty self explainatory, you simply have to specify your file path to **DS4Windows.exe**. After this just confirm it's the right path. 
 
 ![image](https://user-images.githubusercontent.com/13170303/113399436-85933680-93a0-11eb-9c3a-32d98d948e70.png)
 
 Afterwards all the processes should be stopped and DS4Windows should be open.
-If the controller is connected and exclusive mode worked, simply press a button to restart the NVIDIA services.
+If the controller is connected and exclusive mode worked, simply press a button to restart the NVIDIA services. (needed if you want to use ShadowPlay and such)
 
 After your first run, if everything worked, you can always just use DS4HelpAdvRun - this'll skip the variable checks and simply use the set variable.
 
