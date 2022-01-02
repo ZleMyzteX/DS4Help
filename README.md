@@ -25,6 +25,8 @@ Simply download the script and open it with admin rights. (admin rights are need
 
 After opening press any button to start the script, it'll start ending the processes. Afterwards you can simply close the terminal window.
 
+![ds4help](https://user-images.githubusercontent.com/13170303/147862725-5b29b7e3-a841-402b-a1ba-17dde603e9f9.gif)
+
 # Tutorial - DS4HelpAdvanced + DS4HelpAdvRun
 Running the script will explain every step too, but here's a short overview if there's anything unclear. 
 
